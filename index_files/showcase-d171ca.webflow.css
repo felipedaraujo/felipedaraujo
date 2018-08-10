@@ -225,6 +225,23 @@ li {
   text-decoration: none;
 }
 
+.project-buttons {
+  padding-top: 10px;
+}
+
+.project-buttons img {
+  width: 140px;
+}
+
+.project-buttons .site-link {
+  width: 140px;
+  padding: 10px;
+  color: #58595b;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid #58595b;
+}
+
 .navigation {
   position: fixed;
   left: 0px;
@@ -689,6 +706,13 @@ html.w-mod-js *[data-ix='cases-fade-in'] {
     color: #6f7b8d;
     font-size: 18px;
   }
+  .project-buttons img {
+    width: 160px;
+  }
+  .project-buttons .site-link {
+    width: 160px;
+    padding: 12px;
+  }
   .testimonial {
     font-size: 26px;
     line-height: 40px;
@@ -726,6 +750,14 @@ html.w-mod-js *[data-ix='cases-fade-in'] {
   .project-sub {
     font-size: 16px;
     line-height: 1.5em;
+  }
+  .project-buttons img {
+    width: 90px;
+  }
+  .project-buttons .site-link {
+    width: 90px;
+    padding: 8px;
+    font-size: 0.75em;
   }
   .dark-headline {
     font-size: 45px;

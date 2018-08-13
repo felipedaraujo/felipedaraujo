@@ -9,10 +9,11 @@ body {
 }
 
 h1 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-size: 44px;
-  line-height: 1.3em;
+  /* margin-top: 24px; */
+  /* margin-bottom: 24px; */
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-weight: 600;
 }
 
 h2 {
@@ -103,7 +104,7 @@ li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -135,10 +136,9 @@ li {
 }
 
 .intro {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  font-size: 42px;
-  line-height: 1.4em;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-weight: 600;
 }
 
 .project-badges {
@@ -174,8 +174,8 @@ li {
   display: block;
   margin-top: 0px;
   margin-bottom: 4px;
-  color: #6f7b8d;
-  font-size: 16px;
+  color: #444;
+  font-size: 1em;
   line-height: 1.4em;
   font-weight: 300;
   padding-right: 10px;
@@ -329,8 +329,21 @@ li {
 }
 
 .section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.section-intro {
+  display: flex;
+  justify-content: center;
+}
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .project-list {
@@ -471,20 +484,9 @@ li {
   align-items: center;
 }
 
-.contact-block {
-  margin-bottom: 24px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-}
-
-.dark-copy {
-  color: #7e8d97;
-}
-
 .dark-copy.medium {
   margin-bottom: 30px;
-  color: #6f7b8d;
+  color: #444;
   font-size: 20px;
 }
 
@@ -493,10 +495,7 @@ li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1300px;
-  margin-right: auto;
   margin-bottom: 32px;
-  margin-left: auto;
   padding: 32px 24px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -512,9 +511,36 @@ li {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  color: rgba(126, 141, 151, 0.18);
   font-size: 16px;
   line-height: 1.6em;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer a {
+  position: relative;
+}
+
+.footer img {
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.notification {
+  position: absolute;
+  background-color: red;
+  border: 2px solid white;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 0.85em;
+  font-size: 0.85em;
+  border-radius: 50%;
+  top: -4px;
+  right: -2px;
 }
 
 .dark-headline {
@@ -614,7 +640,8 @@ li {
   font-weight: 300;
 }
 
-.jobtitle {
+.highlight {
+  /* color: #ef8354; */
   color: #6f7b8d;
 }
 
@@ -637,6 +664,17 @@ li {
 .underlined {
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(126, 141, 151, 0.18);
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 30px;
+  line-height: 1em;
+  text-align: center;
+}
+
+.arrow-down-icon {
+  font-size: 3em;
 }
 
 .thekevin {
@@ -738,11 +776,8 @@ html.w-mod-js *[data-ix='cases-fade-in'] {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .intro-block {
-    height: 50vh;
-  }
   .intro {
-    font-size: 27px;
+    font-size: 1em;
   }
   .project-title {
     font-size: 22px;
@@ -771,5 +806,20 @@ html.w-mod-js *[data-ix='cases-fade-in'] {
     margin-top: 24px;
     font-size: 18px;
     line-height: 1.6em;
+  }
+
+  .footer img {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .notification {
+    font-size: 0.75em;
+    line-height: 0.75em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }

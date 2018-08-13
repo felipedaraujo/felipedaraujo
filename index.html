@@ -92,17 +92,39 @@ jQuery(document).ready(function($) {
 <body data-gr-c-s-loaded="true" class="vsc-initialized">
 
   <div class="wrapper">
-    <a class="logo w-inline-block" href="http://justinschueler.de/#"><img src="./index_files/js-logo.svg" width="303">
-    </a>
-    <header class="intro-block" data-ix="intro-fade-in" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms, transform 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);">
+    <!--header class="intro-block" data-ix="intro-fade-in" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms, transform 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);">
       <h1 class="intro">Hi!<br>My name is Felipe de Araujo.<br>I'm a <span data-typer-targets="Front End, Mobile" class="jobtitle"></span> Software Engineer.</h1>
+    </header-->
+
+    <header class="section section-intro" data-ix="intro-fade-in" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms, transform 1000ms;cubic-bezier(0.645, 0.045, 0.355, 1);">
+      <div class="row w-row">
+        <div class="w-col w-col-7 w-col-stack">
+          <h1 class="intro">
+            Hi!<br/>
+            My name is Felipe de Araujo.<br/>
+            I'm a <span data-typer-targets="Front End, Mobile" class="highlight"></span> Software Engineer.
+          </h1>
+          <h1 class="intro">
+            As a child 👶🏻 I dreamed of becoming an inventor.
+          </h1>
+          <h1 class="intro">
+            As an adult 👨🏻 I live out my dream by crafting web and mobile apps for startups from markets such as <span class="highlight"><a href="#youper">digital health</a></span>, <span class="highlight"><a href="#govrock">govtech</a></span>, and <span class="highlight"><a href="#chefpro">cooking</a></span>.
+          </h1>
+        </div>
+        <!--div class="w-col w-col-5 w-col-stack"><img sizes="(max-width: 479px) 84vw, (max-width: 767px) 80vw, (max-width: 991px) 43vw, 36vw" src="./index_files/KveinJustin-Portrait.jpg" srcset="images/KveinJustin-Portrait-p-500.jpeg 500w, images/KveinJustin-Portrait.jpg 751w" width="592">
+        </div-->
+      </div>
+
+      <!--div class="arrow-down">
+        <a href="#portfolio"><span class="arrow-down-icon">&#8964;</span><br/>portfolio</a>
+      </div-->
     </header>
 
-    <section class="section" data-ix="cases-fade-in" id="Work" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms, transform 600ms;">
+    <section class="section" data-ix="cases-fade-in" id="portfolio" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms, transform 600ms;">
       <h2 class="section-headline">Portfolio</h2>
 
       <div class="featured-cases w-row">
-        <div class="w-col w-col-6">
+        <div class="w-col w-col-6" id="youper">
           <div class="project-link w-inline-block">
             <div style="display: flex; justify-content: center; align-items: center; position: relative">
               <img sizes="(max-width: 479px) 79vw, (max-width: 767px) 84vw, 41vw" src="./images/iphone600x600.png" width="1137" />
@@ -129,7 +151,7 @@ jQuery(document).ready(function($) {
           </div>
         </div>
 
-        <div class="w-col w-col-6">
+        <div class="w-col w-col-6" id="chefpro">
           <div class="project-link w-inline-block">
             <div style="display: flex; justify-content: center; align-items: center; position: relative">
               <img sizes="(max-width: 479px) 79vw, (max-width: 767px) 84vw, 41vw" src="./images/iphone600x600.png" width="1137" />
@@ -157,7 +179,7 @@ jQuery(document).ready(function($) {
       </div>
 
       <div class="featured-cases w-row">
-        <div class="w-col w-col-12">
+        <div class="w-col w-col-12" id="govrock">
           <div class="project-link w-inline-block">
             <div style="display: flex; justify-content: center; align-items: center; position: relative">
               <img sizes="(max-width: 479px) 79vw, (max-width: 767px) 84vw, 41vw" src="./images/macbook.png" width="1137" />
@@ -184,82 +206,29 @@ jQuery(document).ready(function($) {
           </div>
         </div>
       </div>
+    </section>
 
-      <h2 class="section-headline">Experience</h2>
+    <section class="section section-contact">
+      <div>
+        <h2 class="dark-headline">Drop me a line</h2>
+        <p class="dark-copy medium">
+          <a href="mailto:me@felipedearaujo.com?subject=Hi%20Felipe" class="underlined">me@felipedearaujo.com</a>
+          <br>
+          <a href="tel:+491723608864" class="underlined">+1 415 510 0547</a>
+        </p>
+      </div>
 
-      <div class="w-row">
-        <div class="w-col w-col-6">
-          <ul class="project-list">
-            <li class="single-project">
-              <h4>GovRock</h4>
-              <p>Co-Founder & Lead Engineer
-                <br>Nov 2017 - Present</p>
-            </li>
-
-            <li class="single-project">
-              <h4>Idealic</h4>
-              <p>Software Developer Consultant
-                <br>Feb 2016 - May 2017</p>
-            </li>
-
-            <li class="single-project">
-              <h4>AlphaSights</h4>
-              <p>Software Developer Summer Internship
-                <br>Jun 2014 - Nov 2014</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w-col w-col-6">
-          <ul class="project-list">
-            <li class="single-project">
-              <h4>Youper</h4>
-              <p>Full Stack Developer
-                <br>Jun 2017 - Nov 2017</p>
-            </li>
-
-            <li class="single-project">
-              <h4>iFactory</h4>
-              <p>Software Developer Internship
-                <br>Sep 2015 - Nov 2015</p>
-            </li>
-
-            <li class="single-project">
-              <h4>Astux</h4>
-              <p>Software Developer Internship
-                <br>Oct 2012 - Feb 2013</p>
-            </li>
-          </ul>
-        </div>
+      <div class="footer">
+        <a href="https://www.linkedin.com/in/felipedaraujo/" target="_blank"><img src="./images/linkedin.png" /></a>
+        <a href="https://twitter.com/felipedaraujo_" target="_blank" ><img src="./images/twitter.png" /></a>
+        <a href="https://github.com/felipedaraujo" target="_blank"><img src="./images/github.png" /><span class="notification">2<span></a>
       </div>
     </section>
 
-    <section class="section" data-ix="cases-fade-in" id="Work" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms, transform 600ms;">
-      <h2 class="section-headline">About</h2>
-      <div class="row w-row">
-        <div class="w-col w-col-7 w-col-stack">
-          <p class="subtitle">As a child I dreamed of becoming an inventor. As an adult I live out my dream by crafting web and mobile applications for startups from markets such as digital health, govtech, and food.</p>
-        </div>
-        <!--div class="w-col w-col-5 w-col-stack"><img sizes="(max-width: 479px) 84vw, (max-width: 767px) 80vw, (max-width: 991px) 43vw, 36vw" src="./index_files/KveinJustin-Portrait.jpg" srcset="images/KveinJustin-Portrait-p-500.jpeg 500w, images/KveinJustin-Portrait.jpg 751w" width="592">
-        </div-->
-      </div>
-    </section>
-    <div class="contact-block">
-      <h2 class="dark-headline">Drop me a line</h2>
-      <p class="dark-copy medium">
-        <a href="mailto:me@felipedearaujo.com?subject=Hi%20Felipe" class="underlined">me@felipedearaujo.com</a>
-        <br>
-        <a href="tel:+491723608864" class="underlined">+1 415 510 0547</a>
-      </p>
-    </div>
+
   </div>
-  <div class="footer">
-    <div>
-      <a href="https://github.com/felipedaraujo" target="_blank">Github</a> |
-      <a href="https://twitter.com/felipedaraujo_" target="_blank" >Twitter</a> |
-      <a href="https://www.linkedin.com/in/felipedaraujo/" target="_blank">Linkedin</a>
-    </div>
-  </div>
+
+
   <!--script src="./index_files/jquery.min(1).js" type="text/javascript">
   </script-->
   <script src="./index_files/webflow.js" type="text/javascript">
